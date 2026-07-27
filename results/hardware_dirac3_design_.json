@@ -1,0 +1,26 @@
+{
+  "backend": "dirac3",
+  "grid": "ieee69",
+  "stage": "design",
+  "n_scenarios": 20,
+  "total_wall_s": 43.07719898223877,
+  "hw_dispatch_fuel_cubic": 0.0,
+  "runs": [
+    {
+      "stage": "design",
+      "n_vars": 50,
+      "levels": 202,
+      "max_ub": 6,
+      "degree": 3,
+      "dyn_range_db": 34.5,
+      "raw_capex": 324.8,
+      "repair_units": 6,
+      "coverage_complete": true,
+      "capex": 353.8,
+      "milp_capex": 332.5,
+      "ratio": 1.06406015037594,
+      "wall_s": 40.771,
+      "samples": 5
+    }
+  ]
+}

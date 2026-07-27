@@ -1,0 +1,8 @@
+# All dependencies install cleanly on qBraid with a single:  pip install -r requirements.txt
+# networkx is left unpinned so it resolves compatibly with eqc-models
+# (which requires networkx<3); all graph operations used here work on 2.8.x and 3.x.
+numpy>=1.26
+scipy>=1.12
+networkx>=2.8
+matplotlib>=3.8
+eqc-models

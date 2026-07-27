@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eqosystem"
+version = "1.0.0"
+description = "Two-stage stochastic microgrid design with Dirac-3-native integer Hamiltonians (QCi GIC 2026 Phase 3, team eQoSystem)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Team eQoSystem (ESI-SBA)" }]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.12",
+    "networkx>=3.0",
+    "matplotlib>=3.8",
+    "eqc-models",
+]
+
+[project.scripts]
+eqosystem-experiments = "eqosystem.cli:main"
+
+[tool.setuptools]
+packages = ["eqosystem"]

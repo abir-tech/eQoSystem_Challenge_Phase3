@@ -1,0 +1,46 @@
+{
+  "backend": "sa",
+  "grid": "ieee69",
+  "stage": "dispatch",
+  "n_scenarios": 50,
+  "total_wall_s": 12.67909550666809,
+  "hw_dispatch_fuel_cubic": 0.0,
+  "runs": [
+    {
+      "stage": "dispatch",
+      "scenario": 21,
+      "island": 6,
+      "n_vars": 37,
+      "levels": 321,
+      "max_ub": 15,
+      "degree": 3,
+      "dyn_range_db": 31.1,
+      "radix_clamped": 0,
+      "nontrivial": true,
+      "unserved_kwh": 1641.2883656139588,
+      "milp_unserved_kwh": 1616.6544542492666,
+      "ratio": 1.0152375860530638,
+      "crit_short_hours": 0,
+      "wall_s": 1.568,
+      "samples": 6
+    },
+    {
+      "stage": "dispatch",
+      "scenario": 21,
+      "island": 5,
+      "n_vars": 37,
+      "levels": 302,
+      "max_ub": 15,
+      "degree": 3,
+      "dyn_range_db": 30.6,
+      "radix_clamped": 0,
+      "nontrivial": true,
+      "unserved_kwh": 1538.8443514860699,
+      "milp_unserved_kwh": 1536.6315879526599,
+      "ratio": 1.001440009141266,
+      "crit_short_hours": 0,
+      "wall_s": 1.546,
+      "samples": 6
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "backend": "dirac3",
+  "grid": "ieee69",
+  "matched": 20,
+  "total": 20,
+  "total_wall_s": 405.47320103645325,
+  "runs": [
+    {
+      "scenario": 0,
+      "n_vars": 3,
+      "hw_energy": 0.0,
+      "exact_energy": 0.0,
+      "matched": true,
+      "wall_s": 18.759,
+      "samples": 1,
+      "dyn_range_db": 0.0
+    },
+    {
+      "scenario": 1,
+      "n_vars": 3,
+      "hw_energy": 0.0,
+      "exact_energy": 0.0,
+      "matched": true,
+      "wall_s": 17.982,
+      "samples": 1,
+      "dyn_range_db": 2.2
+    },
+    {
+      "scenario": 2,
+      "n_vars": 3,
+      "hw_energy": -6.55250809628354,
+      "exact_energy": -6.55250809628354,
+      "matched": true,
+      "wall_s": 19.591,
+      "samples": 1,
+      "dyn_range_db": 18.2
+    },
+    {
+      "scenario": 3,
+      "n_vars": 3,
+      "hw_energy": 0.0,
+      "exact_energy": 0.0,
+      "matched": true,
+      "wall_s": 23.528,
+      "samples": 1,
+      "dyn_range_db": 0.1
+    },
+    {
+      "scenario": 4,
+      "n_vars": 3,
+      "hw_energy": -8.019532135929383,
+      "exact_energy": -8.019532135929383,
+      "matched": true,
+      "wall_s": 19.516,
+      "samples": 1,
+      "dyn_range_db": 19.0
+    },
+    {
+      "scenario": 5,
+      "n_vars": 3,
+      "hw_energy": 0.0,
+      "exact_energy": 0.0,
+      "matched": true,
+      "wall_s": 23.086,
+      "samples": 1,
+      "dyn_range_db": 0.0
+    },
+    {
+      "scenario": 6,
+      "n_vars": 3,
+      "hw_energy": -86.79296500196529,
+      "exact_energy": -86.79296500196529,
+      "matched": true,
+      "wall_s": 22.925,
+      "samples": 1,
+      "dyn_range_db": 29.4
+    },
+    {
+      "scenario": 7,
+      "n_vars": 3,
+      "hw_energy": 0.0,
+      "exact_energy": 0.0,
+      "matched": true,
+      "wall_s": 19.59,
+      "samples": 1,
+      "dyn_range_db": 0.0
+    },
+    {
+      "scenario": 8,
+      "n_vars": 3,
+      "hw_energy": -115.8809705304187,
+      "exact_energy": -115.8809705304187,
+      "matched": true,
+      "wall_s": 20.878,
+      "samples": 1,
+      "dyn_range_db": 6.3
+    },
+    {
+      "scenario": 9,
+      "n_vars": 3,
+      "hw_energy": 0.0,
+      "exact_energy": 0.0,
+      "matched": true,
+      "wall_s": 19.34,
+      "samples": 1,
+      "dyn_range_db": 0.0
+    },
+    {
+      "scenario": 10,
+      "n_vars": 3,
+      "hw_energy": 0.0,
+      "exact_energy": 0.0,
+      "matched": true,
+      "wall_s": 21.26,
+      "samples": 1,
+      "dyn_range_db": 0.0
+    },
+    {
+      "scenario": 11,
+      "n_vars": 3,
+      "hw_energy": 0.0,
+      "exact_energy": 0.0,
+      "matched": true,
+      "wall_s": 18.823,
+      "samples": 1,
+      "dyn_range_db": 3.7
+    },
+    {
+      "scenario": 12,
+      "n_vars": 3,
+      "hw_energy": -145.74211082526026,
+      "exact_energy": -145.74211082526026,
+      "matched": true,
+      "wall_s": 21.547,
+      "samples": 1,
+      "dyn_range_db": 30.7
+    },
+    {
+      "scenario": 13,
+      "n_vars": 3,
+      "hw_energy": 0.0,
+      "exact_energy": 0.0,
+      "matched": true,
+      "wall_s": 19.936,
+      "samples": 1,
+      "dyn_range_db": 0.0
+    },
+    {
+      "scenario": 14,
+      "n_vars": 3,
+      "hw_energy": -11.925242393597157,
+      "exact_energy": -11.925242393597157,
+      "matched": true,
+      "wall_s": 19.913,
+      "samples": 1,
+      "dyn_range_db": 20.8
+    },
+    {
+      "scenario": 15,
+      "n_vars": 3,
+      "hw_energy": -82.35054983718193,
+      "exact_energy": -82.35054983718193,
+      "matched": true,
+      "wall_s": 19.095,
+      "samples": 1,
+      "dyn_range_db": 29.2
+    },
+    {
+      "scenario": 16,
+      "n_vars": 3,
+      "hw_energy": -150.19417374331044,
+      "exact_energy": -150.19417374331044,
+      "matched": true,
+      "wall_s": 19.699,
+      "samples": 1,
+      "dyn_range_db": 30.9
+    },
+    {
+      "scenario": 17,
+      "n_vars": 3,
+      "hw_energy": 0.0,
+      "exact_energy": 0.0,
+      "matched": true,
+      "wall_s": 18.715,
+      "samples": 1,
+      "dyn_range_db": 1.8
+    },
+    {
+      "scenario": 18,
+      "n_vars": 3,
+      "hw_energy": -42.916716927363595,
+      "exact_energy": -42.916716927363595,
+      "matched": true,
+      "wall_s": 20.99,
+      "samples": 1,
+      "dyn_range_db": 26.1
+    },
+    {
+      "scenario": 19,
+      "n_vars": 3,
+      "hw_energy": 0.0,
+      "exact_energy": 0.0,
+      "matched": true,
+      "wall_s": 20.301,
+      "samples": 1,
+      "dyn_range_db": 0.0
+    }
+  ]
+}
