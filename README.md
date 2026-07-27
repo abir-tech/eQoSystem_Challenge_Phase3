@@ -2,6 +2,26 @@
 
 **Team:** eQoSystem · **Challenge track:** GIC 2026 — Energy Infrastructure (QCi) · **Title:** Cost Optimization in Resilient Power Grids
 
+
+
+##  Authors & Team Members
+
+
+
+* **Achraf Boussahi**
+  * Research Intern @ CQTech (Constantine Quantum Technologies) & AI Student @ ESI-SBA, Algeria
+  *  [LinkedIn](https://www.linkedin.com/in/ashraf-boussahi/) | ✉️ [a.boussahi@esi-sba.dz](mailto:a.boussahi@esi-sba.dz)
+
+* **Abir Chekroun**
+  *  CS Student @ ESI-SBA, Algeria
+  *  [LinkedIn](https://www.linkedin.com/in/abir-chekroun-a066b52a8/) | ✉️ [a.chekroun@esi-sba.dz](mailto:a.chekroun@esi-sba.dz)
+
+
+* **Zakaria Lourghi**
+  * AI Student @ ESI-SBA, Algeria
+  *  [LinkedIn](https://www.linkedin.com/in/zakaria-lourghi/) | ✉️ [z.lourghi@esi-sba.dz](mailto:z.lourghi@esi-sba.dz)
+ 
+
 A three-stage quantum-optimization pipeline that designs island-capable microgrids on the **IEEE 69-bus** distribution system (IEEE 33-bus also supported via `--grid ieee33`) and operates them through 20 Latin-Hypercube-sampled N-1 contingencies with 4-16 h outage horizons. Dispatch is **time-coupled**: a multi-period Hamiltonian with battery state-of-charge recursion (charge from midday PV, discharge into the evening) solved as ONE hardware job per island. Grid-connected mode is demonstrated via a PCC import/export Hamiltonian under time-of-use prices (E7). Black-start feasibility (grid-forming source required), inverter P-Q capability limits, and ZIP voltage-dependent loads are modeled as documented approximations per the challenge's 'Use of Approximation' criterion. Every optimization problem is formulated as a bounded-integer polynomial Hamiltonian (degree ≤ 3) in the exact submission format of QCi's Dirac-3 entropy quantum computer, using native qudit (integer) encoding — no binary expansion, no auxiliary variables for the cubic terms.
 
 ## Headline results (seed 42, 20 scenarios, IEEE 33-bus)
