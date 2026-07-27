@@ -32,6 +32,48 @@ INV_S_FACTOR = 1.10   # inverter apparent-power rating vs real-power rating
 V_MIN, V_MAX = 0.95, 1.05          # per-unit voltage band
 S_BASE_KVA = 1000.0
 
+# W9 -- P-Q capability model. "piecewise" is the challenge's non-convex
+# D-shaped capability curve; "circle" is the previous convex apparent-power
+# limit, kept for the A/B.
+PQ_MODE = "piecewise"
+
+
+def q_capability(gen_p, s_inv, mode=None):
+    """Reactive-power limit at real output gen_p for an s_inv-rated inverter.
+
+    The convex model is the stator circle Q <= sqrt(S^2 - P^2). The piecewise
+    model composes four limits:
+
+      standby ("Q at night"), P <= 0.02 S:    Q <= 0.90 S
+      low-power stability dip, P < 0.15 S:    Q <= 0.44 S
+      field/thermal limit:                    Q <= 0.90 S - 0.25 P
+      stator circle / end-region derate:      Q <= sqrt(S^2 - P^2), 4 (S - P)
+
+    A NOTE ON WHAT MAKES THIS NON-CONVEX, because the first version got it
+    wrong and a test caught it: a minimum of concave functions is still
+    concave, so a boundary built purely from the circle plus linear derates
+    leaves the feasible set {(P, Q): 0 <= Q <= cap(P)} CONVEX. The genuinely
+    non-convex feature of inverter capability is the low-power dip: full var
+    support in standby, REDUCED capability below ~15% loading (control
+    stability, IEEE 1547-style var capability categories), full capability
+    above. That makes cap(P) non-monotone, so a chord from the standby point
+    to the mid-loading boundary passes above the dip -- the feasible set has a
+    notch. Segment constants are representative and documented approximations.
+    """
+    mode = PQ_MODE if mode is None else mode
+    circle = float(np.sqrt(max(s_inv ** 2 - gen_p ** 2, 0.0)))
+    if mode == "circle":
+        return circle
+    if gen_p <= 0.02 * s_inv:            # standby: Q-at-night var support
+        return min(0.90 * s_inv, circle)
+    if gen_p < 0.15 * s_inv:             # low-power control-stability dip
+        return min(0.44 * s_inv, circle)
+    field = 0.90 * s_inv - 0.25 * gen_p
+    cap = min(circle, max(field, 0.0))
+    if gen_p > 0.85 * s_inv:             # end-region derate near rated output
+        cap = min(cap, max(4.0 * (s_inv - gen_p), 0.0))
+    return max(cap, 0.0)
+
 _tables_cache = {}
 
 def _tables():
@@ -72,7 +114,7 @@ def check_island(cand, scen, h, served_frac_nc, crit_served, supply_kw,
 
     Returns dict(feasible, v_min, v_max, n_v_viol, worst_line_pct, n_l_viol).
     """
-    lf = scen.load_factor
+    lf = scen.load_factor_at(h)     # bucket-varying under scenario-tree mode
     prof = grid.LOAD_PROFILE[h]
     g = _island_graph(cand, scen, closed_ties)
     hubs = cand.get("hubs", [cand["anchor"]])
@@ -114,8 +156,10 @@ def check_island(cand, scen, h, served_frac_nc, crit_served, supply_kw,
 
         # net injections (loads positive; hub generation negative)
         # inverter P-Q capability: reactive injection limited by sqrt(S^2-P^2)
+        # inverter P-Q capability: piecewise non-convex D-curve (W9), see
+        # q_capability; the convex circle remains available via PQ_MODE
         s_inv = INV_S_FACTOR * max(gen_p, 1e-9)
-        q_cap = float(np.sqrt(max(s_inv ** 2 - gen_p ** 2, 0.0)))
+        q_cap = q_capability(gen_p, s_inv)
         gen_q = min(frag_q, q_cap)
         inj_p = {b: load_pq(b)[0] for b in comp}
         inj_q = {b: load_pq(b)[1] for b in comp}

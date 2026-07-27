@@ -42,7 +42,8 @@ We target this problem on QCi's Dirac-3 entropy quantum computer because its nat
 
 The obstacle is not qubit count but {\em coefficient resolution}. Dirac-3 resolves roughly 200:1, about 23~dB. A Hamiltonian whose smallest meaningful coefficient falls below that floor is answered incorrectly {\em with no error returned} --- the device silently optimises a different function. Our design stage began at 42.8~dB and dispatch at 65.0~dB, so two of three stages were unsubmittable. This paper's contribution is the pair of encodings that fixed that, and the certificates that make the fix checkable rather than hopeful.
 
-% Pipeline Figure
+We report negative results alongside positive ones throughout, because several of our own hypotheses failed measurement and the failures are informative. Everything below regenerates from one command at seed~42.
+
 \begin{figure*}[t]\centering
 \begin{tikzpicture}[
   font=\small,
@@ -146,7 +147,7 @@ Dispatch (each) & 37 & 321 & 15 & 31.1 & yes\\
 \quad before encoding & 24 & 289 & 43 & 65.0 & no\\
 Grid-connected & 36 & 1083 & --- & --- & no\\
 \midrule
-\multicolumn{6}{@{}l@{}}{\footnotesize 51 jobs per run; design uses 50 integer variables against 104 binary equivalents; 95~s classical wall-clock.}\\
+\multicolumn{6}{@{}l@{}}{\footnotesize 51 jobs per run; design uses 50 integer variables against 104 binary equivalents; 142~s classical wall-clock.}\\
 \bottomrule\end{tabular}\end{table}
 
 \subsection{Hardware results}

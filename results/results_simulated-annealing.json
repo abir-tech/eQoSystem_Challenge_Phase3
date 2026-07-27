@@ -57,7 +57,7 @@
       "degree": 3,
       "dyn_range_db": 34.49976889172123
     },
-    "wall_total": 43.03253364562988,
+    "wall_total": 61.96051335334778,
     "scenario_detail": [
       {
         "sid": 0,
@@ -1172,7 +1172,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.1829080581665039,
+        "wall": 0.44930005073547363,
         "energy": 0.0
       },
       {
@@ -1180,7 +1180,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.19938135147094727,
+        "wall": 0.49059081077575684,
         "energy": -9.716645134694499
       },
       {
@@ -1192,14 +1192,14 @@
         "levels": 250,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.4213559627532959
+        "wall": 0.6694982051849365
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.30216431617736816,
+        "wall": 0.40155649185180664,
         "energy": -11.836705072762246
       },
       {
@@ -1211,14 +1211,14 @@
         "levels": 145,
         "buckets": 2,
         "step_kw": 20.0,
-        "wall": 0.5200743675231934
+        "wall": 0.6789066791534424
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.31625866889953613,
+        "wall": 0.4126753807067871,
         "energy": 0.0
       },
       {
@@ -1226,7 +1226,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.30692219734191895,
+        "wall": 0.46185827255249023,
         "energy": -12.292532796901147
       },
       {
@@ -1238,14 +1238,14 @@
         "levels": 294,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.5262322425842285
+        "wall": 0.7622172832489014
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3021864891052246,
+        "wall": 0.5819213390350342,
         "energy": -128.891182532294
       },
       {
@@ -1257,14 +1257,14 @@
         "levels": 529,
         "buckets": 3,
         "step_kw": 20.0,
-        "wall": 1.4360172748565674
+        "wall": 2.4182591438293457
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.33458971977233887,
+        "wall": 0.5236835479736328,
         "energy": -9.833672730668486
       },
       {
@@ -1276,14 +1276,14 @@
         "levels": 271,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.5417957305908203
+        "wall": 0.8137965202331543
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.33225512504577637,
+        "wall": 0.4722130298614502,
         "energy": -54.33402511001477
       },
       {
@@ -1295,14 +1295,14 @@
         "levels": 641,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 1.397930383682251
+        "wall": 2.3476035594940186
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.33374738693237305,
+        "wall": 0.5454320907592773,
         "energy": -12.423845112897391
       },
       {
@@ -1314,14 +1314,14 @@
         "levels": 230,
         "buckets": 3,
         "step_kw": 20.0,
-        "wall": 0.5181427001953125
+        "wall": 0.9108657836914062
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.31311964988708496,
+        "wall": 0.5591444969177246,
         "energy": 0.0
       },
       {
@@ -1329,7 +1329,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.31622982025146484,
+        "wall": 0.5331695079803467,
         "energy": -11.179412157386851
       },
       {
@@ -1341,14 +1341,14 @@
         "levels": 228,
         "buckets": 3,
         "step_kw": 20.0,
-        "wall": 0.5132954120635986
+        "wall": 0.8933274745941162
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3154599666595459,
+        "wall": 0.5392556190490723,
         "energy": -9.79204247234082
       },
       {
@@ -1360,14 +1360,14 @@
         "levels": 259,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.5170724391937256
+        "wall": 0.9670326709747314
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3192281723022461,
+        "wall": 0.5859923362731934,
         "energy": 0.0
       },
       {
@@ -1375,7 +1375,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.339458703994751,
+        "wall": 0.5878832340240479,
         "energy": 0.0
       },
       {
@@ -1383,7 +1383,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.31621670722961426,
+        "wall": 0.5428276062011719,
         "energy": 0.0
       },
       {
@@ -1391,7 +1391,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.32161831855773926,
+        "wall": 0.6179671287536621,
         "energy": 0.0
       },
       {
@@ -1399,7 +1399,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.33159828186035156,
+        "wall": 0.5725140571594238,
         "energy": 0.0
       },
       {
@@ -1407,7 +1407,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3167753219604492,
+        "wall": 0.46935200691223145,
         "energy": 0.0
       },
       {
@@ -1415,7 +1415,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3132941722869873,
+        "wall": 0.416149377822876,
         "energy": -119.02961203318873
       },
       {
@@ -1427,14 +1427,14 @@
         "levels": 670,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 1.2967638969421387
+        "wall": 1.741011142730713
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3213229179382324,
+        "wall": 0.44345641136169434,
         "energy": -120.94896594515663
       },
       {
@@ -1446,7 +1446,7 @@
         "levels": 271,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.5211532115936279
+        "wall": 0.6821458339691162
       },
       {
         "stage": "dispatch_mp",
@@ -1457,14 +1457,14 @@
         "levels": 663,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 1.325181245803833
+        "wall": 1.723273515701294
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.31415367126464844,
+        "wall": 0.40573716163635254,
         "energy": 0.0
       },
       {
@@ -1472,7 +1472,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.31930065155029297,
+        "wall": 0.41019701957702637,
         "energy": -195.3289187603168
       },
       {
@@ -1484,7 +1484,7 @@
         "levels": 289,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.522031307220459
+        "wall": 0.6963016986846924
       },
       {
         "stage": "dispatch_mp",
@@ -1495,7 +1495,7 @@
         "levels": 308,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.545445442199707
+        "wall": 0.679985761642456
       },
       {
         "stage": "dispatch_mp",
@@ -1506,14 +1506,14 @@
         "levels": 659,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 1.2403755187988281
+        "wall": 1.6310274600982666
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3150479793548584,
+        "wall": 0.4105966091156006,
         "energy": -83.77987235142368
       },
       {
@@ -1525,14 +1525,14 @@
         "levels": 673,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 1.3747124671936035
+        "wall": 1.8011131286621094
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.32744717597961426,
+        "wall": 0.41103053092956543,
         "energy": 0.0
       },
       {
@@ -1540,7 +1540,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.31897878646850586,
+        "wall": 0.41191816329956055,
         "energy": 0.0
       },
       {
@@ -1548,7 +1548,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3091421127319336,
+        "wall": 0.4098222255706787,
         "energy": 0.0
       },
       {
@@ -1556,7 +1556,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.31108999252319336,
+        "wall": 0.42644619941711426,
         "energy": 0.0
       },
       {
@@ -1564,7 +1564,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3151402473449707,
+        "wall": 0.4116959571838379,
         "energy": -26.067784783257885
       },
       {
@@ -1576,14 +1576,14 @@
         "levels": 269,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.5807850360870361
+        "wall": 0.6787331104278564
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3151865005493164,
+        "wall": 0.41026878356933594,
         "energy": 0.0
       },
       {
@@ -1591,7 +1591,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.30698370933532715,
+        "wall": 0.4432845115661621,
         "energy": 0.0
       },
       {
@@ -1599,7 +1599,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.329326868057251,
+        "wall": 0.4109785556793213,
         "energy": 0.0
       },
       {
@@ -1607,7 +1607,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3485381603240967,
+        "wall": 0.42713260650634766,
         "energy": 0.0
       },
       {
@@ -1615,7 +1615,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3201768398284912,
+        "wall": 0.4107956886291504,
         "energy": -1.334522642298723
       },
       {
@@ -1627,14 +1627,14 @@
         "levels": 279,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.5272524356842041
+        "wall": 0.6794719696044922
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.30956268310546875,
+        "wall": 0.42659902572631836,
         "energy": -199.2036579035574
       },
       {
@@ -1646,7 +1646,7 @@
         "levels": 307,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.5408401489257812
+        "wall": 0.6797313690185547
       },
       {
         "stage": "dispatch_mp",
@@ -1657,7 +1657,7 @@
         "levels": 326,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.5271971225738525
+        "wall": 0.7419247627258301
       },
       {
         "stage": "dispatch_mp",
@@ -1668,14 +1668,14 @@
         "levels": 677,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 1.4489591121673584
+        "wall": 1.85007643699646
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3355824947357178,
+        "wall": 0.4269394874572754,
         "energy": -9.222197010454005
       },
       {
@@ -1687,14 +1687,14 @@
         "levels": 242,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.5115687847137451
+        "wall": 0.6823396682739258
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3196396827697754,
+        "wall": 0.4428279399871826,
         "energy": 0.0
       },
       {
@@ -1702,7 +1702,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3168509006500244,
+        "wall": 0.475832462310791,
         "energy": -116.1198619764861
       },
       {
@@ -1714,14 +1714,14 @@
         "levels": 662,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 1.277618169784546
+        "wall": 1.7406713962554932
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.35009121894836426,
+        "wall": 0.4428105354309082,
         "energy": -143.12897591155883
       },
       {
@@ -1733,7 +1733,7 @@
         "levels": 266,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.5106639862060547
+        "wall": 0.7124438285827637
       },
       {
         "stage": "dispatch_mp",
@@ -1744,14 +1744,14 @@
         "levels": 648,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 1.2831683158874512
+        "wall": 1.6632952690124512
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3190889358520508,
+        "wall": 0.3946573734283447,
         "energy": 0.0
       },
       {
@@ -1759,7 +1759,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.30393147468566895,
+        "wall": 0.4274163246154785,
         "energy": -24.38480587053577
       },
       {
@@ -1771,14 +1771,14 @@
         "levels": 266,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.5117943286895752
+        "wall": 0.7106015682220459
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.30176377296447754,
+        "wall": 0.4114036560058594,
         "energy": -66.71237846264636
       },
       {
@@ -1790,14 +1790,14 @@
         "levels": 470,
         "buckets": 3,
         "step_kw": 20.0,
-        "wall": 1.2021689414978027
+        "wall": 1.6803767681121826
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.30258917808532715,
+        "wall": 0.42693328857421875,
         "energy": -137.1934766544507
       },
       {
@@ -1809,7 +1809,7 @@
         "levels": 286,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 0.5217599868774414
+        "wall": 0.710970401763916
       },
       {
         "stage": "dispatch_mp",
@@ -1820,14 +1820,14 @@
         "levels": 664,
         "buckets": 4,
         "step_kw": 20.0,
-        "wall": 1.3481836318969727
+        "wall": 1.9162123203277588
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.318432092666626,
+        "wall": 0.4181954860687256,
         "energy": 0.0
       },
       {
@@ -1835,7 +1835,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3384740352630615,
+        "wall": 0.4109528064727783,
         "energy": 0.0
       },
       {
@@ -1843,7 +1843,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3055083751678467,
+        "wall": 0.4116251468658447,
         "energy": 0.0
       },
       {
@@ -1851,7 +1851,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3024711608886719,
+        "wall": 0.41164636611938477,
         "energy": 0.0
       },
       {
@@ -1859,7 +1859,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.30464982986450195,
+        "wall": 0.4267425537109375,
         "energy": 0.0
       },
       {
@@ -1867,7 +1867,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.3180992603302002,
+        "wall": 0.4111623764038086,
         "energy": 0.0
       },
       {
@@ -1875,7 +1875,7 @@
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.30444836616516113,
+        "wall": 0.45678186416625977,
         "energy": -23.011652965165066
       },
       {
@@ -1887,14 +1887,14 @@
         "levels": 206,
         "buckets": 3,
         "step_kw": 20.0,
-        "wall": 0.5106394290924072
+        "wall": 0.679419755935669
       },
       {
         "stage": "island",
         "n_vars": 3,
         "degree": 1,
         "terms": 3,
-        "wall": 0.33932065963745117,
+        "wall": 0.4267294406890869,
         "energy": -118.81101913550447
       },
       {
@@ -1906,7 +1906,7 @@
         "levels": 130,
         "buckets": 2,
         "step_kw": 20.0,
-        "wall": 0.49788475036621094
+        "wall": 0.6805849075317383
       },
       {
         "stage": "dispatch_mp",
@@ -1917,7 +1917,7 @@
         "levels": 321,
         "buckets": 2,
         "step_kw": 20.0,
-        "wall": 1.2507123947143555
+        "wall": 1.5721380710601807
       }
     ]
   },
@@ -1984,7 +1984,7 @@
   },
   "E4": {
     "milp_capex": 332.5,
-    "milp_wall": 0.015037298202514648,
+    "milp_wall": 0.03170490264892578,
     "backend_capex": 338.8,
     "cost_ratio": 1.0189473684210526
   },
@@ -1996,7 +1996,7 @@
       "dyn_db": 34.49976889172123,
       "p_success": 0.08333333333333333,
       "mean_energy": 749.4004425000004,
-      "mean_wall_s": 0.19663198788960776
+      "mean_wall_s": 0.3428880174954732
     },
     "binary": {
       "vars": 104,
@@ -2005,240 +2005,10 @@
       "dyn_db": 32.10853365314893,
       "p_success": 0.0,
       "mean_energy": 827.4333250000004,
-      "mean_wall_s": 0.4543118476867676
+      "mean_wall_s": 0.801945149898529
     },
     "trials": 12,
     "iters": 4000
-  },
-  "E12_dispatch_baseline": {
-    "instances": 12,
-    "unserved_hamiltonian": 1452.7794530933434,
-    "unserved_milp": 1472.1133982980134,
-    "crit_short_hamiltonian": 0,
-    "crit_short_milp": 0,
-    "dg_kwh_hamiltonian": 101260.0,
-    "dg_kwh_milp": 97780.0,
-    "wall_hamiltonian": 5.977885723114014,
-    "wall_milp": 0.1589946746826172,
-    "ratio": 0.9868665381165452,
-    "detail": [
-      {
-        "sid": 1,
-        "island": 5,
-        "hamiltonian": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 8800.0,
-          "nc_served_frac": 1.0
-        },
-        "milp": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 8260.0,
-          "nc_served_frac": 1.0
-        },
-        "milp_wall": 0.006064891815185547,
-        "ham_wall": 0.30904722213745117
-      },
-      {
-        "sid": 2,
-        "island": 5,
-        "hamiltonian": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 3880.0,
-          "nc_served_frac": 1.0
-        },
-        "milp": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 3800.0,
-          "nc_served_frac": 1.0
-        },
-        "milp_wall": 0.0062749385833740234,
-        "ham_wall": 0.3209397792816162
-      },
-      {
-        "sid": 4,
-        "island": 5,
-        "hamiltonian": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 10480.0,
-          "nc_served_frac": 1.0
-        },
-        "milp": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 10320.0,
-          "nc_served_frac": 1.0
-        },
-        "milp_wall": 0.012830495834350586,
-        "ham_wall": 0.32738828659057617
-      },
-      {
-        "sid": 5,
-        "island": 8,
-        "hamiltonian": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 9180.0,
-          "nc_served_frac": 1.0
-        },
-        "milp": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 8960.0,
-          "nc_served_frac": 1.0
-        },
-        "milp_wall": 0.018982887268066406,
-        "ham_wall": 0.9104354381561279
-      },
-      {
-        "sid": 6,
-        "island": 5,
-        "hamiltonian": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 7960.0,
-          "nc_served_frac": 1.0
-        },
-        "milp": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 7640.0,
-          "nc_served_frac": 1.0
-        },
-        "milp_wall": 0.012023687362670898,
-        "ham_wall": 0.3209371566772461
-      },
-      {
-        "sid": 7,
-        "island": 8,
-        "hamiltonian": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 164.26968708613978,
-          "dg_kwh": 9520.0,
-          "nc_served_frac": 0.9395598463758266
-        },
-        "milp": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 212.3323228606905,
-          "dg_kwh": 8760.0,
-          "nc_served_frac": 0.92238839842318
-        },
-        "milp_wall": 0.012317657470703125,
-        "ham_wall": 0.8240017890930176
-      },
-      {
-        "sid": 8,
-        "island": 5,
-        "hamiltonian": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 5600.0,
-          "nc_served_frac": 1.0
-        },
-        "milp": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 5600.0,
-          "nc_served_frac": 1.0
-        },
-        "milp_wall": 0.00593113899230957,
-        "ham_wall": 0.32758402824401855
-      },
-      {
-        "sid": 10,
-        "island": 5,
-        "hamiltonian": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 4800.0,
-          "nc_served_frac": 1.0
-        },
-        "milp": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 4800.0,
-          "nc_served_frac": 1.0
-        },
-        "milp_wall": 0.008673906326293945,
-        "ham_wall": 0.3394758701324463
-      },
-      {
-        "sid": 11,
-        "island": 5,
-        "hamiltonian": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 7000.0,
-          "nc_served_frac": 1.0
-        },
-        "milp": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 0.0,
-          "dg_kwh": 6660.0,
-          "nc_served_frac": 1.0
-        },
-        "milp_wall": 0.006353855133056641,
-        "ham_wall": 0.3278541564941406
-      },
-      {
-        "sid": 18,
-        "island": 8,
-        "hamiltonian": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 1036.7400107103217,
-          "dg_kwh": 14880.0,
-          "nc_served_frac": 0.7997229560911056
-        },
-        "milp": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 901.9465088913518,
-          "dg_kwh": 14760.0,
-          "nc_served_frac": 0.8277435640854759
-        },
-        "milp_wall": 0.010860204696655273,
-        "ham_wall": 0.811042070388794
-      },
-      {
-        "sid": 19,
-        "island": 5,
-        "hamiltonian": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 130.3260547199121,
-          "dg_kwh": 8000.0,
-          "nc_served_frac": 0.9781748351692386
-        },
-        "milp": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 171.89204536292047,
-          "dg_kwh": 7680.0,
-          "nc_served_frac": 0.970969714962001
-        },
-        "milp_wall": 0.009868383407592773,
-        "ham_wall": 0.32767534255981445
-      },
-      {
-        "sid": 19,
-        "island": 8,
-        "hamiltonian": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 121.4437005769698,
-          "dg_kwh": 11160.0,
-          "nc_served_frac": 0.9624753017272137
-        },
-        "milp": {
-          "crit_short_hours": 0,
-          "unserved_kwh": 185.9425211830507,
-          "dg_kwh": 10540.0,
-          "nc_served_frac": 0.9422717872909953
-        },
-        "milp_wall": 0.0488126277923584,
-        "ham_wall": 0.8315045833587646
-      }
-    ]
   },
   "E8_conditioning": {
     "resolution_ratio": 200.0,
@@ -3967,6 +3737,236 @@
       }
     ]
   },
+  "E12_dispatch_baseline": {
+    "instances": 12,
+    "unserved_hamiltonian": 1452.7794530933434,
+    "unserved_milp": 1472.1133982980134,
+    "crit_short_hamiltonian": 0,
+    "crit_short_milp": 0,
+    "dg_kwh_hamiltonian": 101260.0,
+    "dg_kwh_milp": 97780.0,
+    "wall_hamiltonian": 12.933329582214355,
+    "wall_milp": 0.3064713478088379,
+    "ratio": 0.9868665381165452,
+    "detail": [
+      {
+        "sid": 1,
+        "island": 5,
+        "hamiltonian": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 8800.0,
+          "nc_served_frac": 1.0
+        },
+        "milp": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 8260.0,
+          "nc_served_frac": 1.0
+        },
+        "milp_wall": 0.015798568725585938,
+        "ham_wall": 0.6964671611785889
+      },
+      {
+        "sid": 2,
+        "island": 5,
+        "hamiltonian": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 3880.0,
+          "nc_served_frac": 1.0
+        },
+        "milp": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 3800.0,
+          "nc_served_frac": 1.0
+        },
+        "milp_wall": 0.004111051559448242,
+        "ham_wall": 0.6911208629608154
+      },
+      {
+        "sid": 4,
+        "island": 5,
+        "hamiltonian": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 10480.0,
+          "nc_served_frac": 1.0
+        },
+        "milp": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 10320.0,
+          "nc_served_frac": 1.0
+        },
+        "milp_wall": 0.01359868049621582,
+        "ham_wall": 0.7293329238891602
+      },
+      {
+        "sid": 5,
+        "island": 8,
+        "hamiltonian": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 9180.0,
+          "nc_served_frac": 1.0
+        },
+        "milp": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 8960.0,
+          "nc_served_frac": 1.0
+        },
+        "milp_wall": 0.04741954803466797,
+        "ham_wall": 1.8944323062896729
+      },
+      {
+        "sid": 6,
+        "island": 5,
+        "hamiltonian": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 7960.0,
+          "nc_served_frac": 1.0
+        },
+        "milp": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 7640.0,
+          "nc_served_frac": 1.0
+        },
+        "milp_wall": 0.0,
+        "ham_wall": 0.7273318767547607
+      },
+      {
+        "sid": 7,
+        "island": 8,
+        "hamiltonian": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 164.26968708613978,
+          "dg_kwh": 9520.0,
+          "nc_served_frac": 0.9395598463758266
+        },
+        "milp": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 212.3323228606905,
+          "dg_kwh": 8760.0,
+          "nc_served_frac": 0.92238839842318
+        },
+        "milp_wall": 0.020407438278198242,
+        "ham_wall": 1.7914671897888184
+      },
+      {
+        "sid": 8,
+        "island": 5,
+        "hamiltonian": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 5600.0,
+          "nc_served_frac": 1.0
+        },
+        "milp": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 5600.0,
+          "nc_served_frac": 1.0
+        },
+        "milp_wall": 0.015804290771484375,
+        "ham_wall": 0.7098789215087891
+      },
+      {
+        "sid": 10,
+        "island": 5,
+        "hamiltonian": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 4800.0,
+          "nc_served_frac": 1.0
+        },
+        "milp": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 4800.0,
+          "nc_served_frac": 1.0
+        },
+        "milp_wall": 0.015421390533447266,
+        "ham_wall": 0.6943645477294922
+      },
+      {
+        "sid": 11,
+        "island": 5,
+        "hamiltonian": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 7000.0,
+          "nc_served_frac": 1.0
+        },
+        "milp": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 0.0,
+          "dg_kwh": 6660.0,
+          "nc_served_frac": 1.0
+        },
+        "milp_wall": 0.031603097915649414,
+        "ham_wall": 0.711439847946167
+      },
+      {
+        "sid": 18,
+        "island": 8,
+        "hamiltonian": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 1036.7400107103217,
+          "dg_kwh": 14880.0,
+          "nc_served_frac": 0.7997229560911056
+        },
+        "milp": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 901.9465088913518,
+          "dg_kwh": 14760.0,
+          "nc_served_frac": 0.8277435640854759
+        },
+        "milp_wall": 0.015769243240356445,
+        "ham_wall": 1.7728519439697266
+      },
+      {
+        "sid": 19,
+        "island": 5,
+        "hamiltonian": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 130.3260547199121,
+          "dg_kwh": 8000.0,
+          "nc_served_frac": 0.9781748351692386
+        },
+        "milp": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 171.89204536292047,
+          "dg_kwh": 7680.0,
+          "nc_served_frac": 0.970969714962001
+        },
+        "milp_wall": 0.015784263610839844,
+        "ham_wall": 0.7277781963348389
+      },
+      {
+        "sid": 19,
+        "island": 8,
+        "hamiltonian": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 121.4437005769698,
+          "dg_kwh": 11160.0,
+          "nc_served_frac": 0.9624753017272137
+        },
+        "milp": {
+          "crit_short_hours": 0,
+          "unserved_kwh": 185.9425211830507,
+          "dg_kwh": 10540.0,
+          "nc_served_frac": 0.9422717872909953
+        },
+        "milp_wall": 0.11075377464294434,
+        "ham_wall": 1.7868638038635254
+      }
+    ]
+  },
   "resources": {
     "total_quantum_jobs": 51,
     "design_vars": 50,
@@ -3976,6 +3976,6 @@
     "design_qubit_equivalent_binary": 104,
     "island_vars_mean": 3.0,
     "dispatch_vars_mean": 0,
-    "wall_clock_total_s": 94.77946496009827
+    "wall_clock_total_s": 141.72128462791443
   }
 }

@@ -17,13 +17,33 @@ import numpy as np
 
 
 # ------------------------------------------------------------ eqc conversion
-def to_eqc_model(H, return_mapping=False):
+def to_eqc_model(H, condition=True, return_mapping=False, return_cert=False,
+                 stage="unknown", resolution_ratio=None, trigger_db=None):
     """Convert Poly -> eqc_models PolynomialModel with correct index format.
 
     Variables with upper bound 0 (e.g. PV curtailment at night) are fixed at
     zero and compressed out -- Dirac-3 rejects zero upper bounds, and dropping
     them also saves qudits. `mapping` re-expands hardware solutions."""
     from eqc_models.base import PolynomialModel
+    from . import conditioning as cond
+
+    # Coefficient conditioning is DEFAULT-ON: hardware legality must not depend
+    # on a caller remembering a flag, because an over-range Hamiltonian fails
+    # SILENTLY -- the device returns a plausible wrong answer with no error.
+    # The Hamiltonian is rewritten only if its dynamic range exceeds the
+    # calibrated trigger AND the truncation carries a proof that the ground
+    # state does not move; everything else passes through byte-identically.
+    if condition:
+        kw = {}
+        if resolution_ratio is not None:
+            kw["resolution_ratio"] = resolution_ratio
+        if trigger_db is not None:
+            kw["trigger_db"] = trigger_db
+        H, cert = cond.truncate_certified(H, **kw)
+    else:
+        cond.warn_unconditioned(H, stage=stage)
+        cert = None
+
     keep = [v for v in sorted(H.upper) if H.upper[v] >= 1]
     remap = {v: i + 1 for i, v in enumerate(keep)}
     deg = max(H.degree, 2)
@@ -46,6 +66,10 @@ def to_eqc_model(H, return_mapping=False):
     probe = np.array([probe_full[v - 1] for v in keep], dtype=float)
     assert abs(model.evaluate(probe) - (H.evaluate(probe_full) - H.const)) < 1e-6 * max(
         1.0, abs(H.evaluate(probe_full))), "eqc-models polynomial mismatch"
+    if return_mapping and return_cert:
+        return model, keep, cert
+    if return_cert:
+        return model, cert
     if return_mapping:
         return model, keep
     return model
@@ -174,9 +198,14 @@ class Dirac3Solver:
     def available(self):
         return bool(os.environ.get("QCI_TOKEN"))
 
-    def solve(self, H, job_name="eqosystem"):
+    def solve(self, H, job_name="eqosystem", stage="unknown"):
         from eqc_models.solvers import Dirac3IntegerCloudSolver
-        model, keep = to_eqc_model(H, return_mapping=True)
+        from . import conditioning as cond
+        model, keep, cert = to_eqc_model(H, return_mapping=True,
+                                         return_cert=True, stage=stage)
+        # Refuse rather than submit: the device accepts an over-range or
+        # over-16-level Hamiltonian and answers it incorrectly, silently.
+        cond.assert_hardware_legal(H, cert=cert, stage=stage)
         solver = Dirac3IntegerCloudSolver()
         t0 = time.time()
         resp = solver.solve(model, name=job_name,
@@ -194,7 +223,73 @@ class Dirac3Solver:
                     dirac_metadata={kk: resp.get(kk) for kk in ("job_info",) if kk in resp})
 
 
+class Dirac3ContinuousSolver:
+    """W3c hardware path: the quasi-continuous solver, for stages that stay large.
+
+    The integer solver caps variables at 16 levels and the multi-period dispatch
+    stage does not fit. This path has no such cap (max_upper_bound = 10000). An
+    inert slack variable is added so the device's equality sum constraint does
+    not pin the solution to a single point, and the returned continuous vector
+    is rounded to the lattice, clamped, repaired by greedy descent on the
+    ORIGINAL Hamiltonian, and re-scored by our evaluator. The rounding gap is
+    returned, not hidden."""
+    name = "dirac-3-continuous"
+
+    def __init__(self, relaxation_schedule=2, num_samples=5, headroom=1.0):
+        self.relaxation_schedule = relaxation_schedule
+        self.num_samples = num_samples
+        self.headroom = headroom
+
+    def available(self):
+        return bool(os.environ.get("QCI_TOKEN"))
+
+    def solve(self, H, job_name="eqosystem", stage="dispatch"):
+        from eqc_models.solvers import Dirac3ContinuousCloudSolver
+        from . import continuous as cont
+        from . import conditioning as cond
+
+        H_ext, meta = cont.to_simplex(H, headroom=self.headroom)
+        model, keep = to_eqc_model(H_ext, return_mapping=True, stage=stage)
+        lv = cond.total_levels(H_ext)
+        if lv > cond.MAX_TOTAL_LEVELS:
+            raise ValueError(
+                f"stage '{stage}': {lv} levels exceeds the "
+                f"{cond.MAX_TOTAL_LEVELS} limit even on the continuous solver; "
+                f"decompose by zone (W3d) instead")
+        solver = Dirac3ContinuousCloudSolver()
+        t0 = time.time()
+        resp = solver.solve(model, name=job_name,
+                            sum_constraint=float(meta["sum_constraint"]),
+                            relaxation_schedule=self.relaxation_schedule,
+                            num_samples=self.num_samples)
+        wall = time.time() - t0
+        sols = resp.solutions if hasattr(resp, "solutions") else \
+            resp["results"]["solutions"]
+        sols = np.atleast_2d(np.asarray(sols))
+        best_x, best_e, best_info = None, np.inf, None
+        for sm in sols:
+            y = expand_solution(sm, keep, H_ext.n).astype(float)
+            x, info = cont.round_and_repair(y[:H.n], H)
+            e = H.evaluate(x.astype(float))
+            if e < best_e:
+                best_x, best_e, best_info = x, e, info
+        return dict(x=best_x, energy=best_e, wall=wall, backend=self.name,
+                    samples=len(sols), continuous_info=best_info,
+                    sum_constraint=meta["sum_constraint"])
+
+
 def get_solver(backend: str, **kw):
+    if backend == "dirac3c":
+        sv = Dirac3ContinuousSolver(**kw)
+        if not sv.available():
+            raise RuntimeError(
+                "QCI_TOKEN not set. The Dirac-3 continuous solver requires a "
+                "token.\n  * For a free classical rehearsal of this exact path, "
+                "use eqosystem.continuous.ContinuousRelaxSolver (no token)")
+        return sv
+    if backend == "contrelax":
+        from .continuous import ContinuousRelaxSolver
+        return ContinuousRelaxSolver(**kw)
     if backend == "dirac3":
         s = Dirac3Solver(**kw)
         if not s.available():
