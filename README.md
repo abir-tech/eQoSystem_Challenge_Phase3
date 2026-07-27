@@ -6,6 +6,20 @@
 
 [<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150">](https://account.qbraid.com?gitHubUrl=https://github.com/abir-tech/eQoSystem_Challenge_Phase3.git)
 
+## Authors & Team Members
+
+* **Achraf Boussahi**
+  * Research Intern @ CQTech (Constantine Quantum Technologies) & AI Student @ ESI-SBA, Algeria
+  * [LinkedIn](https://www.linkedin.com/in/ashraf-boussahi/) | ✉️ [a.boussahi@esi-sba.dz](mailto:a.boussahi@esi-sba.dz)
+
+* **Abir Chekroun**
+  * CS Student @ ESI-SBA, Algeria
+  * [LinkedIn](https://www.linkedin.com/in/abir-chekroun-a066b52a8/) | ✉️ [a.chekroun@esi-sba.dz](mailto:a.chekroun@esi-sba.dz)
+
+* **Zakaria Lourghi**
+  * AI Student @ ESI-SBA, Algeria
+  * [LinkedIn](https://www.linkedin.com/in/zakaria-lourghi/) | ✉️ [z.lourghi@esi-sba.dz](mailto:z.lourghi@esi-sba.dz)
+
 A three-stage quantum-optimization pipeline for resilient microgrid design on IEEE
 distribution feeders. It (1) selects overlapping island candidates and sizes their DER
 portfolios at minimum cost, (2) decides which islands to energize during each N-1
